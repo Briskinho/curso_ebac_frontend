@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário de cadastro bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="container d-flex flex-column justify-content-center config-main">
+        <div>
+            <div class="row-mb-3">
+                <div class="col">
+                    <h2 class="mb-4 text-center">Formulário de Cadastro</h2>
+                    <form>
+                        <div class="mb-4">
+                            <label for="nome" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required minlength="3">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="form-label">Telefone</label>
+                            <input type="tel" name="phone" class="form-control" id="phone" placeholder="(00) 00000-0000" required maxlength="15" autocomplete="tel">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
