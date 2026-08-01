@@ -1,0 +1,29 @@
+@use '../config/variaveis';
+
+header {
+    background-color: variaveis.$corSecundaryBg;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: variaveis.$p-md 0;
+    }
+}
+
+.menu {
+    display: flex;
+
+    li{
+        font-weight: bold;
+        margin-left: 24px;
+
+        a {
+            color: variaveis.$corText;
+            text-decoration: none;
+        }
+    }
+}

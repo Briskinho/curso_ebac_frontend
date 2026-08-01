@@ -1,0 +1,5 @@
+@use '../config/variaveis';
+
+section {
+    padding: variaveis.$p-xg 0;
+}
