@@ -1,0 +1,110 @@
+// variaveis de estilo
+@fontPrincipal: Roboto, sans-serif;
+@fontTitle: Lobster, cursive;
+@corTexto: #fff;
+@backgroudColor: #07705f;
+@buttonColor: #dbd9f5;
+@buttonText: #000;
+
+body {
+    background-color: @backgroudColor;
+    font-family: @fontPrincipal;
+    color: @corTexto;
+}
+
+h1 {
+    font-family: @fontTitle;
+    font-size: 3em;
+}
+
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    padding: 16px 24px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 16px 8px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: @buttonColor;
+    color: @backgroudColor;
+    font-family: @fontPrincipal;
+    transition: transform 0.2s, opacity 0.2s;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+
+    &.btn-secundario {
+        background-color: transparent;
+        border: 2px solid @corTexto;
+        color: @corTexto;
+    }
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 16px auto 0;
+    font-size: 1em;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: @corTexto;
+    font-family: @fontPrincipal;
+    resize: vertical;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.lista-container {
+    margin-top: 32px;
+    
+    h3 {
+        font-size: 1.2em;
+        margin-bottom: 8px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+
+        li {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+    }
+}
+
+.resultado {
+    padding: 16px;
+    margin-top: 40px;
+    border: 8px dotted #fff;
+    display: none;
+
+    span {
+        font-weight: bold;
+        font-size: 2.5em;
+        display: block;
+        margin-top: 10px;
+        color: @buttonColor;
+    }
+}
