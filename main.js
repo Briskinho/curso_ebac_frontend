@@ -19,7 +19,7 @@ function ProfissionalTI(nome, area, salario) {
     let _projetosEntregues = 0;
 
     this.getProjetos = function() {
-        return _projetosEntregues++;
+        return _projetosEntregues;
     }
 
     this.setProjetos = function() {
